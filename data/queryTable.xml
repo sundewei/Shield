@@ -1,0 +1,12 @@
+<shield>
+    <systemId/>
+    <upTimeMs/>
+    <timeMS minDate="21/Feb/2013:13" maxDate="21/Feb/2013:15" />
+    <gallon min="0" max="6000" />
+    <cubicFeet />
+<!--
+    <sunShine />
+    <windSpeed />
+    <kiloWatt />
+-->
+</shield>

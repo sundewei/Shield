@@ -1,0 +1,11 @@
+<shield>
+    <table name="demoSensorData" appendTimestamp="false"/>    
+	<column name="systemId" type="string" rowKeyOrder="1"/>
+    <column name="timeMs" type="long" rowKeyOrder="0"/>
+    <column name="upTimeMs" type="long"/>
+    <column name="gallon" type="long" />
+    <column name="cubicFeet" type="long"/>
+	<column name="windSpeed" type="int" />
+    <column name="sunShine" type="int"/>
+	<column name="kiloWatt" type="long"/>
+</shield>

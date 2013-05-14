@@ -1,0 +1,6 @@
+<shield>
+    <ip/>
+    <dd regex="06"/>
+    <hh regex="1."/>
+    <resource regex="^/productDetails.jsp\?PPSID=.*"></resource>
+</shield>

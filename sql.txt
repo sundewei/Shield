@@ -1,0 +1,47 @@
+create column table SHIELD.SHIELD_TABLES (
+ID integer primary key,
+name varchar(400) unique not null,
+parser_class varchar(50),
+append_timestamp varchar(5),
+created timestamp not null
+);
+
+drop table shield.SHIELD_tables;
+DELETE FROM SHIELD.SHIELD_TABLES WHERE ID = ?
+DELETE FROM SHIELD.SHIELD_COLUMNS WHERE ID IN (SELECT ID FROM SHIELD.SHIELD_TABLE_COLUMNS WHERE TABLE_ID = ?)
+DELETE FROM SHIELD.SHIELD_TABLE_COLUMNS WHERE TABLE_ID = ?
+
+create column table SHIELD.SHIELD_COLUMNS (
+ID integer primary key,
+name varchar(400) not null,
+data_type varchar(400) not null
+);
+
+drop table SHIELD.SHIELD_COLUMNS;
+
+create column table SHIELD.SHIELD_TABLE_COLUMNS (
+TABLE_ID integer not null,
+COLUMN_ID integer not null,
+order_num integer not null,
+row_key_order integer not null,
+primary key (table_id, column_id)
+);
+
+drop table SHIELD.SHIELD_TABLE_COLUMNS;
+
+select * 
+from shield.SHIELD_tables;
+
+select * 
+from shield.SHIELD_columns;
+
+select * 
+from shield.SHIELD_table_columns;
+
+create column table SHIELD.SHIELD_SERVERS (
+	full_host_name varchar(500) primary key,
+	update_sequence bigint not null,
+	update_url varchar(1000)
+);
+
+

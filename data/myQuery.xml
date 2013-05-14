@@ -1,0 +1,6 @@
+<shield>
+    <ip/>
+    <method/>
+    <dd max="01" />
+    <resource regex="^/aplus20.css"></resource>
+</shield>

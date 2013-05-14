@@ -1,0 +1,6 @@
+<shield>
+    <dd regex="07"/>
+    <ip/>
+    <hh regex="9."/>
+    <resource regex="^/jQuery.*"></resource>
+</shield>
